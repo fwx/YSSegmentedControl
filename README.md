@@ -1,8 +1,10 @@
 YSSegmentedControl
 ==================
 
-Android style segmented control written in swift.  
-Fully customisable.  
+Android style segmented control written in swift.
+Fully customisable.
+Updated for Swift 4.0.
+
 
 Demo
 ----
@@ -20,7 +22,7 @@ Copy & paste `YSSegmentedControl.swift` in your project
 
 ``` ruby
 use_frameworks!
-pod 'YSSegmentedControl'
+pod 'YSSegmentedControl', :git => 'https://github.com/fwx/YSSegmentedControl'
 ```
 
 Usage
