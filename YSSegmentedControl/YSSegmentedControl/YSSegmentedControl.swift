@@ -167,6 +167,7 @@ public protocol YSSegmentedControlDelegate: class {
 
 public typealias YSSegmentedControlAction = (_ segmentedControl: YSSegmentedControl, _ index: Int) -> Void
 
+@IBDesignable
 public class YSSegmentedControl: UIView {
     
     // MARK: Properties
@@ -176,12 +177,14 @@ public class YSSegmentedControl: UIView {
     
     private var selectedIndex = 0
     
+    
     public var appearance: YSSegmentedControlAppearance! {
         didSet {
             self.draw()
         }
     }
     
+    @IBInspectable
     public var titles: [String]! {
         didSet {
             if appearance == nil {
